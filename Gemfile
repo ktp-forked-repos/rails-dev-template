@@ -54,4 +54,10 @@ end
 
 group :staging, :production do
   gem "newrelic_rpm", ">= 3.7.3"
+  gem 'rails_12factor',           '0.0.2'
+  gem 'capistrano',               '~> 3.2.1'
+  gem 'capistrano-rails',         '~> 1.1.0'
+  gem 'capistrano-bundler',       '~> 1.1.3'
+  gem 'capistrano-rbenv',         '~> 2.0'
+  gem 'capistrano-resque',        '~> 0.2.1', require: false
 end
