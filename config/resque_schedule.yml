@@ -1,0 +1,6 @@
+# complete_profile_reminder:
+#   every: 30s
+#   class: MyJob
+#   queue: user_notifications
+#   args:
+#   description: Runs the perform method in MyJob

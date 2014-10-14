@@ -20,7 +20,13 @@ gem "sass-rails", "~> 4.0.3"
 gem "simple_form"
 gem "title"
 gem "uglifier"
+
+
 gem "unicorn"
+gem 'resque',                 '~> 1.25.2', require: 'resque/server'
+gem 'resque_mailer',          '~> 2.2.6'
+gem 'resque-scheduler',       '~> 3.0.0', require: 'resque/scheduler/server'
+
 
 group :development do
   gem "spring"
