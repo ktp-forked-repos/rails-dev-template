@@ -10,3 +10,7 @@ development: &default
 test:
   <<: *default
   database: rails-dev-template_test
+
+production:
+  <<: *default
+  database: rails-dev-template_production
