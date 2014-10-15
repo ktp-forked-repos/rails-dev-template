@@ -100,6 +100,8 @@ namespace :deploy do
   after :finishing, 'resque:restart'
   after :finishing, 'resque:scheduler:restart'
 
+  before 'deploy:setup_config', 'linked_files:upload'
+
   # remove the default nginx configuration as it will tend
   # to conflict with our configs.
   before 'deploy:setup_config', 'nginx:remove_default_vhost'
