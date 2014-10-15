@@ -10,3 +10,9 @@ development: &default
 test:
   <<: *default
   database: rails-dev-template_test
+
+production:
+  <<: *default
+  database: rails_dev_template_production
+  username: rails_dev_template_production
+  password: test
