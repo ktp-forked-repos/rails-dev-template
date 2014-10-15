@@ -13,4 +13,6 @@ test:
 
 production:
   <<: *default
-  database: rails-dev-template_production
+  database: rails_dev_template_production
+  user: postgres
+  password: test
